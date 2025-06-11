@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "知識労働の未来",
+    "subtitle": "思考と働き方を\n変革する",
+    "description": "Bayond LLCが開発するMyondは、AI搭載の次世代ワークスペースです。\n思考、計画、タスクをビジュアルに構造化し、真にやりたいことを明確にします。",
+    "cta": "未来を探索する"
+  },
+  "numbers": {
+    "title": "重要な数字",
+    "subtitle": "グローバルな影響と成長",
+    "description": "サンフランシスコと日本を拠点とするグローバルスタートアップの実績",
+    "activeClients": "アクティブクライアント",
+    "completedProjects": "完了プロジェクト", 
+    "techExperts": "技術専門家",
+    "globalOffices": "グローバルオフィス"
+  },
+  "services": {
+    "title": "プロダクト & サービス",
+    "subtitle": "包括的なソリューションで、あなたのビジネスを次のレベルへ"
+  },
+  "ai_solutions": {
+    "title": "AI Solutions",
+    "description": "最先端のAI技術による革新的なソリューション"
+  },
+  "saas_startup": {
+    "title": "SaaS & Startup",
+    "description": "AI強化されたSaaSソリューション"
+  },
+  "tech_services": {
+    "title": "Tech Services",
+    "description": "包括的な技術サービス"
+  },
+  "company": {
+    "title": "Company Overview",
+    "subtitle": "Bayond LLC: Beyond Boundaries",
+    "description": "\"This is Global Startup, beyond Bay Area in US and the Shores of Japan\"",
+    "globalTeam": {
+      "title": "グローバルチーム",
+      "description": "San Francisco, CAとJapanを拠点とするグローバルチーム"
+    },
+    "innovation": {
+      "title": "革新への焦点",
+      "description": "AI、SaaS、DXの最先端技術で企業と個人の生産性を革新"
+    },
+    "mission": {
+      "title": "ミッション",
+      "description": "テクノロジーを通じて人々をより幸せにする瞬間を創造する"
+    },
+    "info": {
+      "title": "会社情報",
+      "founded": "設立",
+      "headquarters": "本社",
+      "ceo": "CEO",
+      "email": "メール",
+      "address": "オフィス住所"
+    }
+  },
+  "transform": {
+    "badge": "変革の準備はできましたか？",
+    "title": "ワークフローを変革する",
+    "description": "あなたのワークフローを次のレベルへ。Myondと共に新しい働き方を始めませんか？"
+  },
+  "footer": {
+    "description": "\"This is Global Startup, beyond Bay Area in US and the Shores of Japan\"",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "products": "プロダクト・サービス",
+    "myond": "Myond - AI Workspace",
+    "aiSolutions": "AI Solutions",
+    "saasSupport": "SaaS/Startup Support",
+    "techServices": "Tech Services (DX & Analytics)"
+  },
+  "common": {
+    "language": "言語",
+    "japanese": "日本語",
+    "english": "English",
+    "readMore": "詳細を見る",
+    "getStarted": "始める",
+    "contactUs": "お問い合わせ"
+  }
+} 

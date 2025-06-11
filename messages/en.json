@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services", 
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "The Future of Knowledge Work",
+    "subtitle": "Transform How You\nThink & Work",
+    "description": "Myond by Bayond LLC is an AI-powered next-generation workspace.\nVisualize and structure your thoughts, plans, and tasks to clarify what you truly want to achieve.",
+    "cta": "Explore the Future"
+  },
+  "numbers": {
+    "title": "Numbers That Matter",
+    "subtitle": "Global Impact & Growth",
+    "description": "Performance of a global startup based in San Francisco and Japan",
+    "activeClients": "Active Clients",
+    "completedProjects": "Completed Projects",
+    "techExperts": "Tech Experts",
+    "globalOffices": "Global Offices"
+  },
+  "services": {
+    "title": "Products & Services",
+    "subtitle": "Comprehensive solutions to take your business to the next level"
+  },
+  "ai_solutions": {
+    "title": "AI Solutions",
+    "description": "Innovative solutions powered by cutting-edge AI technology"
+  },
+  "saas_startup": {
+    "title": "SaaS & Startup",
+    "description": "AI-powered SaaS solutions"
+  },
+  "tech_services": {
+    "title": "Tech Services", 
+    "description": "Comprehensive technical services"
+  },
+  "company": {
+    "title": "Company Overview",
+    "subtitle": "Bayond LLC: Beyond Boundaries",
+    "description": "\"This is Global Startup, beyond Bay Area in US and the Shores of Japan\"",
+    "globalTeam": {
+      "title": "Global Team",
+      "description": "Global team based in San Francisco, CA and Japan"
+    },
+    "innovation": {
+      "title": "Innovation Focus",
+      "description": "Revolutionizing corporate and individual productivity with cutting-edge AI, SaaS, and DX technologies"
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Creating moments that make people happier through technology"
+    },
+    "info": {
+      "title": "Company Information",
+      "founded": "Founded",
+      "headquarters": "Headquarters",
+      "ceo": "CEO",
+      "email": "Email",
+      "address": "Office Address"
+    }
+  },
+  "transform": {
+    "badge": "Ready to Transform?",
+    "title": "Transform Your Workflow",
+    "description": "Take your workflow to the next level. Start a new way of working with Myond."
+  },
+  "footer": {
+    "description": "\"This is Global Startup, beyond Bay Area in US and the Shores of Japan\"",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "products": "Products & Services",
+    "myond": "Myond - AI Workspace",
+    "aiSolutions": "AI Solutions",
+    "saasSupport": "SaaS/Startup Support",
+    "techServices": "Tech Services (DX & Analytics)"
+  },
+  "common": {
+    "language": "Language",
+    "japanese": "日本語",
+    "english": "English",
+    "readMore": "Read More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us"
+  }
+} 
