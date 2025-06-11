@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# exclude vercel-mcp-server from build
+/vercel-mcp-server/
