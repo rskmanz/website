@@ -110,7 +110,7 @@ const ComponentCarousel = () => {
         clearInterval(autoPlayRef.current)
       }
     }
-  }, [])
+  }, [nextSlide, prevSlide])
 
   const slideVariants = {
     enter: (direction: number) => ({

@@ -83,7 +83,7 @@ export default function Home() {
               Bayond LLC: Beyond Boundaries
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-              "This is Global Startup, beyond Bay Area in US and the Shores of Japan"
+              &ldquo;This is Global Startup, beyond Bay Area in US and the Shores of Japan&rdquo;
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Bayond LLC</h3>
               <p className="text-muted-foreground mb-4">
-                "This is Global Startup, beyond Bay Area in US and the Shores of Japan"
+                &ldquo;This is Global Startup, beyond Bay Area in US and the Shores of Japan&rdquo;
               </p>
               <p className="text-sm text-muted-foreground">
                 2443 Fillmore St, San Francisco, CA, 94115
