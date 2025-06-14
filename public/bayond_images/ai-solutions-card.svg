@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="180" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ai-bg" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" rx="24" fill="url(#ai-bg)"/>
+  <!-- RAG/AIエージェントのイメージ：中央に脳＋右にチャットバブル -->
+  <ellipse cx="110" cy="90" rx="32" ry="22" fill="#fff" fill-opacity="0.9"/>
+  <text x="110" y="97" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#14b8a6">AI</text>
+  <!-- チャットバブル -->
+  <rect x="170" y="70" width="80" height="36" rx="12" fill="#fff" fill-opacity="0.85"/>
+  <polygon points="190,106 200,116 200,106" fill="#fff" fill-opacity="0.85"/>
+  <text x="210" y="93" font-family="Arial" font-size="14" fill="#14b8a6">RAG</text>
+  <text x="210" y="110" font-family="Arial" font-size="12" fill="#22c55e">Agent</text>
+  <!-- タイトル -->
+  <text x="50%" y="38" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#fff">AI Solutions</text>
+</svg> 

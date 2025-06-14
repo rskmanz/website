@@ -1,0 +1,415 @@
+{
+  "common": {
+    "english": "EN",
+    "japanese": "JP"
+  },
+  "hero": {
+    "badge": "The Future of Knowledge Work",
+    "title": "Transform How You Think & Work",
+    "description": "Myond by Bayond LLC is an AI-powered next-generation workspace. Visualize and structure your thoughts, plans, and tasks to clarify what you truly want to achieve.",
+    "exploreButton": "Explore the Future"
+  },
+  "numbers": {
+    "badge": "Numbers That Matter",
+    "title": "Global Impact & Growth",
+    "description": "Performance of a global startup based in San Francisco and Japan",
+    "activeClients": "Active Clients",
+    "completedProjects": "Completed Projects",
+    "techExperts": "Tech Experts",
+    "globalOffices": "Global Offices"
+  },
+  "company": {
+    "badge": "Company Overview",
+    "title": "Bayond LLC: Beyond Boundaries",
+    "tagline": "This is Global Startup, beyond Bay Area in US and the Shores of Japan",
+    "globalTeam": "Global Team",
+    "globalTeamDesc": "Global team based in San Francisco, CA and Japan",
+    "innovationFocus": "Innovation Focus",
+    "innovationDesc": "Revolutionizing corporate and individual productivity with cutting-edge AI, SaaS, and DX technologies",
+    "mission": "Mission",
+    "missionDesc": "Creating moments that make people happier through technology",
+    "companyInfo": "Company Information",
+    "founded": "Founded",
+    "headquarters": "Headquarters",
+    "ceo": "CEO",
+    "email": "Email",
+    "officeAddress": "Office Address"
+  },
+  "transform": {
+    "badge": "Ready to Transform?",
+    "title": "Transform Your Workflow",
+    "description": "Take your workflow to the next level. Start a new way of working with Myond."
+  },
+  "footer": {
+    "companyDescription": "This is Global Startup, beyond Bay Area in US and the Shores of Japan",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "productsServices": "Products & Services",
+    "myondWorkspace": "Myond - AI Workspace",
+    "aiSolutions": "AI Solutions",
+    "saasSupport": "SaaS/Startup Support",
+    "techServices": "Tech Services (DX & Analytics)",
+    "contactUs": "Contact Us",
+    "ceoName": "CEO: Ryosuke Ogata",
+    "emailContact": "Email: r.ogata@bayond.tech",
+    "linkedin": "LinkedIn: Available for connection",
+    "copyright": "© 2024 Bayond LLC. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you for your message! We'll get back to you soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "header": {
+    "contact": "Contact"
+  },
+  "carousel": {
+    "badge": "4 Core Components",
+    "title": "Bayond LLC: Products & Services",
+    "description": "Introducing our 4 main components in slide format. View the details of each service.",
+    "pause": "Pause",
+    "auto": "Auto",
+    "keyboardHint": "💡 You can also navigate slides with ←→ keyboard keys"
+  },
+  "services": {
+    "myond": {
+      "title": "Myond",
+      "subtitle": "AI Workspace",
+      "description": "AI-powered next-generation workspace that visually structures thoughts, plans, and activities"
+    },
+    "aiSolutions": {
+      "title": "AI Solutions",
+      "subtitle": "LLM & RAG Services",
+      "description": "Advanced AI services including LLM integration, RAG systems, and AI agent development"
+    },
+    "saasStartup": {
+      "title": "SaaS/Startup",
+      "subtitle": "Full Development Support",
+      "description": "Complete SaaS development and startup support from concept to market"
+    },
+    "techServices": {
+      "title": "Tech Services",
+      "subtitle": "DX & Analytics",
+      "description": "Digital transformation and data analytics consulting for enterprise systems"
+    }
+  },
+  "myond": {
+    "badge": "🚀 AI-Powered Workspace Revolution",
+    "title": "Meet Myond: Your AI-Powered Second Brain",
+    "description": "Transform your thinking with Myond - the revolutionary AI workspace that visually structures thoughts, plans, and activities to unlock your true potential and achieve breakthrough results.",
+    "coreCapabilities": "🎯 Core Capabilities That Change Everything",
+    "perfectFor": "✨ Perfect for Visionary Professionals",
+    "keyFeatures": "⚡ Game-Changing Features",
+    "simplePricing": "💎 Simple, Transparent Pricing",
+    "builtWith": "🔧 Built with Cutting-Edge Technology",
+    "brandMessage": "🌟 Our Brand Promise",
+    "ourMission": "🎯 Our Mission",
+    "ctaTitle": "Ready to Transform Your Workflow Forever?",
+    "ctaDescription": "Join thousands of professionals who've revolutionized their productivity",
+    "getStarted": "🚀 Start Your Journey",
+    "startFreeTrial": "✨ Start 14-Day Free Trial",
+    "viewDemo": "🎬 Watch Live Demo",
+    "capabilities": {
+      "metaThinking": {
+        "title": "🧠 Meta Thinking Engine",
+        "description": "Revolutionary cognitive mapping that structures your thoughts, emotions, and plans into visual insights that reveal hidden patterns and unlock breakthrough ideas.",
+        "features": ["AI-powered mind mapping", "Emotional intelligence tracking", "Cognitive load optimization", "Pattern recognition"]
+      },
+      "centralHub": {
+        "title": "🎯 Your Digital Command Center",
+        "description": "A powerful personal platform that becomes your intellectual core, seamlessly connecting all your tools and information into one unified workspace.",
+        "features": ["360° personal dashboard", "Universal app integration", "Intelligent workflow automation", "Real-time synchronization"]
+      },
+      "meaningfulConnections": {
+        "title": "🌐 Relationship Intelligence",
+        "description": "Build and nurture meaningful professional relationships with AI-powered insights that help you connect authentically and create lasting impact.",
+        "features": ["Relationship mapping", "Communication insights", "Networking optimization", "Collaboration enhancement"]
+      },
+      "extension": {
+        "title": "⚡ Beyond Yourself Extension",
+        "description": "AI automatically retrieves and maps related information, building a dynamic knowledge network that expands your thinking horizons.",
+        "features": ["AI-powered knowledge retrieval", "Dynamic information mapping", "Creative perspective expansion", "Intelligent connections"]
+      }
+    },
+    "useCases": {
+      "entrepreneurs": {
+        "title": "🚀 Startup Founders",
+        "description": "Map vision → strategy → product → pitch. Organize team structure and OKRs.",
+        "benefits": ["Vision Planning", "Team Management", "Investor Pitch"]
+      },
+      "students": {
+        "title": "🎓 Students",
+        "description": "Create visual study maps, generate quiz questions, and track assignments.",
+        "benefits": ["Study Maps", "Quiz Generation", "Assignment Tracking"]
+      },
+      "creatives": {
+        "title": "🎨 Designers & Creators",
+        "description": "Map creative flow, script, or content production cycles.",
+        "benefits": ["Creative Workflow", "Content Planning", "Project Visualization"]
+      },
+      "researchers": {
+        "title": "🔬 Researchers",
+        "description": "Organize research questions, literature, notes, and conclusions.",
+        "benefits": ["Literature Review", "Note Organization", "Research Synthesis"]
+      },
+      "developers": {
+        "title": "💻 Developers",
+        "description": "Visualize system architecture, feature specs, and track bugs or updates.",
+        "benefits": ["System Design", "Feature Planning", "Bug Tracking"]
+      },
+      "managers": {
+        "title": "📅 Managers",
+        "description": "Turn meeting notes into tasks and connect dependencies visually.",
+        "benefits": ["Meeting Management", "Task Dependencies", "Team Coordination"]
+      }
+    },
+    "features": [
+      "Graph Workspace - Visualize entire thought and work process",
+      "Daily Logs & Reflections - Track emotional state and progress",
+      "Smart Nodes - Text, tasks, links, videos, PDFs, code",
+      "AI Functions - Ask, Edit, Agent for comprehensive support",
+      "Templates - Built-in formats for various use cases",
+      "Reusable Structures - Brand messages, pitches, roadmaps"
+    ],
+    "pricing": {
+      "basic": {
+        "duration": "2weeks",
+        "price": "¥80",
+        "features": ["Basic graph workspace", "Personal templates", "Cloud sync"]
+      },
+      "pro": {
+        "duration": "4weeks",
+        "price": "¥120",
+        "features": ["All basic features", "AI collaboration", "Advanced templates", "Team sharing"]
+      },
+      "enterprise": {
+        "duration": "8weeks",
+        "price": "¥150",
+        "features": ["All features", "Priority support", "Custom integrations", "Advanced analytics"]
+      }
+    },
+    "techStack": {
+      "react": "Modern UI framework",
+      "firebase": "Real-time database",
+      "openai": "AI intelligence",
+      "langchain": "AI orchestration"
+    },
+    "brandQuote": "Ask yourself, What you do and what you really want to do",
+    "missionQuote": "Map everything about you and guide your daily thoughts into meaningful actions with AI",
+    "workspaceTitle": "Interactive Graph Workspace",
+    "workspaceDescription": "Visualize connections between all your work elements",
+    "popular": "Popular",
+    "getStarted": "Get Started"
+  },
+  "aiSolutions": {
+    "badge": "🤖 Advanced AI Solutions",
+    "title": "Revolutionary AI Integration That Drives Results",
+    "description": "Transform your business with cutting-edge AI services including LLM integration, intelligent RAG systems, and custom AI agents that deliver measurable ROI and competitive advantage.",
+    "useCases": "🎯 Real-World AI Success Stories",
+    "implementationProcess": "⚡ Our Proven AI Implementation Process",
+    "ctaTitle": "Ready to Harness AI's Game-Changing Power?",
+    "ctaDescription": "Join industry leaders who've increased productivity by 300% with our AI solutions",
+    "startProject": "🚀 Launch AI Transformation",
+    "services": {
+      "customAgents": {
+        "title": "🤖 Custom AI Agents in Your App",
+        "description": "Seamlessly integrate intelligent AI agents directly into your customer applications for enhanced user experience and automated workflows.",
+        "features": ["Natural language processing", "Automated customer support", "Intelligent recommendations", "Real-time decision making"]
+      },
+      "aiDx": {
+        "title": "⚡ AI × Digital Transformation with MCP",
+        "description": "Accelerate your digital transformation with AI-powered Model Context Protocol integration that revolutionizes business processes.",
+        "features": ["Process automation", "Data intelligence", "Predictive analytics", "Workflow optimization"]
+      },
+      "llmIntegration": {
+        "title": "🧠 LLM Integration & Optimization",
+        "description": "Harness the power of Large Language Models with custom integrations that understand your business context and deliver precise results.",
+        "features": ["Custom model training", "API optimization", "Context understanding", "Performance tuning"]
+      },
+      "ragSystems": {
+        "title": "📚 Intelligent RAG Systems",
+        "description": "Build knowledge-aware AI systems that access and utilize your company's data to provide accurate, contextual responses.",
+        "features": ["Document processing", "Knowledge retrieval", "Context-aware answers", "Multi-source integration"]
+      }
+    },
+    "useCasesList": {
+      "customerService": {
+        "title": "🎯 AI-Powered Customer Service",
+        "description": "24/7 intelligent support that resolves 80% of queries instantly",
+        "results": "90% customer satisfaction, 60% cost reduction"
+      },
+      "contentGeneration": {
+        "title": "✍️ Automated Content Creation",
+        "description": "Generate high-quality content at scale with brand consistency",
+        "results": "500% content output increase, 70% time savings"
+      },
+      "dataAnalysis": {
+        "title": "📊 Intelligent Data Analytics",
+        "description": "Turn complex data into actionable insights automatically",
+        "results": "300% faster insights, 95% accuracy improvement"
+      },
+      "processAutomation": {
+        "title": "⚙️ Workflow Automation",
+        "description": "Automate complex business processes with intelligent decision-making",
+        "results": "80% process efficiency gain, 50% error reduction"
+      }
+    },
+    "process": {
+      "step1": {
+        "title": "🎯 Discovery & Strategy",
+        "description": "Deep dive into your business needs and AI opportunities"
+      },
+      "step2": {
+        "title": "🛠️ Custom Development",
+        "description": "Build tailored AI solutions using cutting-edge technology"
+      },
+      "step3": {
+        "title": "🚀 Integration & Deployment",
+        "description": "Seamless implementation with minimal business disruption"
+      },
+      "step4": {
+        "title": "📈 Optimization & Growth",
+        "description": "Continuous improvement and scaling for maximum ROI"
+      }
+    }
+  },
+  "saasStartup": {
+    "badge": "🚀 SaaS & Startup Acceleration",
+    "title": "From Idea to Million-Dollar SaaS: Your Complete Launch Partner",
+    "description": "Transform your vision into a market-leading SaaS with our end-to-end development, scaling strategies, and proven frameworks that have helped startups raise over $50M in funding.",
+    "successStories": "💰 Funded Success Stories",
+    "techStack": "⚡ Our Cutting-Edge Technology Stack",
+    "developmentProcess": "🛠️ Our Proven Development Process",
+    "ctaTitle": "Ready to Build Your Million-Dollar SaaS?",
+    "ctaDescription": "Join 100+ successful startups we've launched to market",
+    "startProject": "🚀 Launch Your Startup",
+    "viewPortfolio": "📈 View Success Stories",
+    "services": {
+      "mvpDevelopment": {
+        "title": "⚡ Rapid MVP Development",
+        "description": "Launch your minimum viable product in 4-8 weeks with our battle-tested frameworks and pre-built components.",
+        "features": ["4-8 week delivery", "Scalable architecture", "User feedback integration", "Iterative improvements"],
+        "deliverables": ["Working MVP", "Technical documentation", "Deployment strategy", "User testing results"]
+      },
+      "fullStackDevelopment": {
+        "title": "🏗️ Full-Stack SaaS Platform",
+        "description": "Complete SaaS platform development with enterprise-grade security, scalability, and modern user experience.",
+        "features": ["Microservices architecture", "Auto-scaling infrastructure", "Advanced security", "API-first design"],
+        "deliverables": ["Production-ready platform", "Admin dashboard", "API documentation", "Monitoring setup"]
+      },
+      "fundingSupport": {
+        "title": "💰 Funding & Investment Support",
+        "description": "Comprehensive support for fundraising including pitch deck creation, investor connections, and due diligence preparation.",
+        "features": ["Pitch deck creation", "Financial modeling", "Investor introductions", "Due diligence prep"],
+        "deliverables": ["Investor-ready pitch", "Financial projections", "Technical roadmap", "Investment strategy"]
+      },
+      "goToMarket": {
+        "title": "📈 Go-to-Market Strategy",
+        "description": "Data-driven marketing strategies and growth hacking techniques to achieve product-market fit and sustainable growth.",
+        "features": ["Market analysis", "Customer acquisition", "Growth strategies", "Performance tracking"],
+        "deliverables": ["Marketing strategy", "Launch plan", "Growth metrics", "Customer insights"]
+      }
+    },
+    "successMetrics": {
+      "clientsLaunched": "100+",
+      "fundingRaised": "$50M+",
+      "averageGrowth": "300%",
+      "timeToMarket": "4-8 weeks"
+    },
+    "techStackDetails": {
+      "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "backend": ["Node.js", "Python", "PostgreSQL", "Redis"],
+      "cloud": ["AWS", "Vercel", "Docker", "Kubernetes"],
+      "ai": ["OpenAI", "LangChain", "Vector DBs", "Custom Models"]
+    },
+    "process": {
+      "step1": {
+        "title": "🎯 Vision & Strategy",
+        "description": "Define your product vision, target market, and competitive advantage",
+        "duration": "1 week"
+      },
+      "step2": {
+        "title": "🎨 Design & Architecture",
+        "description": "Create user experience designs and technical architecture",
+        "duration": "1-2 weeks"
+      },
+      "step3": {
+        "title": "⚡ Rapid Development",
+        "description": "Build your MVP with agile development and continuous feedback",
+        "duration": "4-6 weeks"
+      },
+      "step4": {
+        "title": "🚀 Launch & Scale",
+        "description": "Deploy to production and implement growth strategies",
+        "duration": "Ongoing"
+      }
+    }
+  },
+  "techServicesShowcase": {
+    "badge": "🏢 Enterprise Tech Services: DX & Analytics",
+    "title": "Digital Transformation That Delivers ROI",
+    "description": "Transform your enterprise with cutting-edge digital solutions and data analytics that drive measurable business outcomes. Our proven methodologies have helped Fortune 500 companies achieve 400% productivity gains.",
+    "ctaTitle": "Ready for Enterprise-Scale Digital Transformation?",
+    "ctaDescription": "Join industry leaders who've revolutionized their operations with our proven solutions",
+    "startTransformation": "🚀 Begin Transformation Journey",
+    "services": {
+      "digitalTransformation": {
+        "title": "🔄 Complete Digital Transformation",
+        "description": "End-to-end digital transformation that modernizes your entire technology stack and business processes for the digital age.",
+        "features": ["Legacy system modernization", "Cloud migration strategy", "Process automation", "Digital workflow design"],
+        "outcomes": ["80% faster processes", "60% cost reduction", "99.9% uptime", "Real-time insights"]
+      },
+      "dataAnalytics": {
+        "title": "📊 Advanced Data Analytics",
+        "description": "Transform raw data into actionable business intelligence with AI-powered analytics platforms and custom dashboards.",
+        "features": ["Real-time dashboards", "Predictive analytics", "Custom reporting", "Data visualization"],
+        "outcomes": ["300% faster insights", "95% decision accuracy", "50% better forecasting", "Automated reporting"]
+      },
+      "systemIntegration": {
+        "title": "🔗 Enterprise System Integration",
+        "description": "Seamlessly connect all your business systems for unified operations and complete data visibility across your organization.",
+        "features": ["API integration", "Microservices architecture", "Real-time sync", "Security protocols"],
+        "outcomes": ["100% data consistency", "Eliminated silos", "Unified workflows", "Enhanced security"]
+      },
+      "aiImplementation": {
+        "title": "🤖 AI-Powered Operations",
+        "description": "Integrate artificial intelligence into your business processes to automate complex tasks and enhance decision-making capabilities.",
+        "features": ["Process automation", "Intelligent insights", "Predictive maintenance", "Smart recommendations"],
+        "outcomes": ["70% automation rate", "90% accuracy boost", "24/7 operations", "Proactive maintenance"]
+      }
+    },
+    "industries": {
+      "manufacturing": {
+        "title": "🏭 Manufacturing Excellence",
+        "description": "Smart factory solutions with IoT integration and predictive maintenance"
+      },
+      "healthcare": {
+        "title": "🏥 Healthcare Innovation",
+        "description": "Patient data management and AI-powered diagnostic tools"
+      },
+      "finance": {
+        "title": "🏦 Financial Services",
+        "description": "Risk management, compliance automation, and fraud detection"
+      },
+      "retail": {
+        "title": "🛍️ Retail Optimization",
+        "description": "Customer analytics, inventory management, and personalization"
+      }
+    },
+    "methodologies": {
+      "agile": "Agile Development",
+      "devops": "DevOps Integration",
+      "cloudNative": "Cloud-Native Architecture",
+      "security": "Security-First Approach"
+    }
+  },
+  "seo": {
+    "title": "Bayond LLC - AI-Powered Digital Transformation & SaaS Development",
+    "description": "Transform your business with Bayond LLC's cutting-edge AI solutions, SaaS development, and digital transformation services. Based in San Francisco, we help startups and enterprises achieve breakthrough results.",
+    "keywords": "AI solutions, SaaS development, digital transformation, startup accelerator, San Francisco tech company, enterprise software, AI integration, custom software development"
+  }
+}

@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
@@ -10,8 +8,11 @@ import {
   Search,
   CheckCircle
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const AiSolutionsShowcase = () => {
+  const t = useTranslations('aiSolutions')
   const showcaseRef = useRef(null)
   const isInView = useInView(showcaseRef, { once: true, amount: 0.2 })
 
@@ -176,14 +177,22 @@ const AiSolutionsShowcase = () => {
         <motion.div variants={itemVariants} className="text-center mb-12">
           <Badge className="mb-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500">
             <Brain className="w-4 h-4 mr-2" />
-            AI Solutions
+            {t('badge')}
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Advanced AI Integration
+            {t('title')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            LLM統合、RAGシステム、AIエージェント開発を含む高度なAIサービス
+          <p className="text-muted-foreground mb-4">
+            {t('description')}
           </p>
+          <Image
+            src="/images/components/ai-solutions.svg"
+            alt="AI Solutions"
+            width={320}
+            height={180}
+            className="rounded-xl mx-auto mb-4"
+            style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+          />
         </motion.div>
 
         {/* Services Grid */}
@@ -225,7 +234,7 @@ const AiSolutionsShowcase = () => {
 
         {/* Use Cases */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12">AI Solutions Use Cases</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">{t('useCases')}</h3>
           <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
             {useCases.map((useCase, index) => (
               <motion.div
@@ -258,7 +267,7 @@ const AiSolutionsShowcase = () => {
 
         {/* Implementation Process */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12">Our AI Implementation Process</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">{t('implementationProcess')}</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {implementationProcess.map((process, index) => (
               <motion.div
@@ -282,12 +291,12 @@ const AiSolutionsShowcase = () => {
         {/* CTA */}
         <motion.div variants={itemVariants} className="text-center">
           <Card className="p-8 bg-gradient-to-br from-purple-50/50 to-blue-50/50 border-border/50">
-            <h3 className="text-2xl font-bold mb-3">Ready to Harness AI Power?</h3>
+            <h3 className="text-2xl font-bold mb-3">{t('ctaTitle')}</h3>
             <p className="text-muted-foreground mb-6">
-              最先端のAIソリューションでビジネスプロセスを変革しましょう
+              {t('ctaDescription')}
             </p>
             <Button className="bg-gradient-to-r from-purple-500 to-blue-500">
-              Start AI Project
+              {t('startProject')}
               <Brain className="w-4 h-4 ml-2" />
             </Button>
           </Card>

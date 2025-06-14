@@ -1,0 +1,67 @@
+{
+  "common": {
+    "english": "EN",
+    "japanese": "JP"
+  },
+  "hero": {
+    "badge": "The Future of Knowledge Work",
+    "title": "Transform How You Think & Work",
+    "description": "Myond by Bayond LLC is an AI-powered next-generation workspace. Visualize and structure your thoughts, plans, and tasks to clarify what you truly want to achieve.",
+    "exploreButton": "Explore the Future"
+  },
+  "numbers": {
+    "badge": "Numbers That Matter",
+    "title": "Global Impact & Growth",
+    "description": "Performance of a global startup based in San Francisco and Japan",
+    "activeClients": "Active Clients",
+    "completedProjects": "Completed Projects",
+    "techExperts": "Tech Experts",
+    "globalOffices": "Global Offices"
+  },
+  "company": {
+    "badge": "Company Overview",
+    "title": "Bayond LLC: Beyond Boundaries",
+    "tagline": "This is Global Startup, beyond Bay Area in US and the Shores of Japan",
+    "globalTeam": "Global Team",
+    "globalTeamDesc": "Global team based in San Francisco, CA and Japan",
+    "innovationFocus": "Innovation Focus",
+    "innovationDesc": "Revolutionizing corporate and individual productivity with cutting-edge AI, SaaS, and DX technologies",
+    "mission": "Mission",
+    "missionDesc": "Creating moments that make people happier through technology",
+    "companyInfo": "Company Information",
+    "founded": "Founded",
+    "headquarters": "Headquarters",
+    "ceo": "CEO",
+    "email": "Email",
+    "officeAddress": "Office Address"
+  },
+  "transform": {
+    "badge": "Ready to Transform?",
+    "title": "Transform Your Workflow",
+    "description": "Take your workflow to the next level. Start a new way of working with Myond."
+  },
+  "footer": {
+    "companyDescription": "This is Global Startup, beyond Bay Area in US and the Shores of Japan",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "productsServices": "Products & Services",
+    "myondWorkspace": "Myond - AI Workspace",
+    "aiSolutions": "AI Solutions",
+    "saasSupport": "SaaS/Startup Support",
+    "techServices": "Tech Services (DX & Analytics)",
+    "contactUs": "Contact Us",
+    "ceoName": "CEO: Ryosuke Ogata",
+    "emailContact": "Email: r.ogata@bayond.tech",
+    "linkedin": "LinkedIn: Available for connection",
+    "copyright": "© 2024 Bayond LLC. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you for your message! We'll get back to you soon.",
+    "error": "Something went wrong. Please try again."
+  }
+}

@@ -5,27 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Brain, 
-  Network, 
-  MessageSquare, 
-  Edit, 
-  Bot, 
-  Users, 
-  GraduationCap, 
-  Palette, 
-  Search, 
-  Code, 
-  Calendar,
-  CheckCircle,
-  ArrowRight,
-  Star,
-  Sparkles,
-  Layers,
-  Target,
-  Zap,
-  Globe
-} from 'lucide-react'
+import { Brain, Network, CheckCircle, Layers, Target, Zap } from 'lucide-react'
 
 const MyondProductShowcase = () => {
   const showcaseRef = useRef(null)
@@ -75,27 +55,6 @@ const MyondProductShowcase = () => {
       title: "Extension (Beyond Yourself)",
       description: "AI automatically retrieves and maps related information, building a dynamic knowledge network that expands your thinking horizons.",
       features: ["AI-powered knowledge retrieval", "Dynamic information mapping", "Creative perspective expansion"]
-    }
-  ]
-
-  const aiFeatures = [
-    {
-      icon: <MessageSquare className="w-5 h-5" />,
-      title: "Ask - Explore Ideas Freely",
-      description: "Interact with AI to ask questions, brainstorm, or gather knowledge. Expand thinking and find insights intuitively.",
-      color: "bg-blue-500"
-    },
-    {
-      icon: <Edit className="w-5 h-5" />,
-      title: "Edit - Refine and Transform",
-      description: "AI helps modify or reframe existing content — turning notes into tasks, organizing scattered thoughts, or summarizing ideas.",
-      color: "bg-green-500"
-    },
-    {
-      icon: <Bot className="w-5 h-5" />,
-      title: "Agent - Execute with Direction",
-      description: "Tell AI what you want to achieve, and it generates tasks, updates maps, and assists in step-by-step workflows.",
-      color: "bg-purple-500"
     }
   ]
 
@@ -225,29 +184,6 @@ const MyondProductShowcase = () => {
                       </div>
                     </div>
                   </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* AI Features */}
-        <motion.div variants={itemVariants} className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12">AI Collaboration Features</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {aiFeatures.map((feature, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.02 }}
-                className="group"
-              >
-                <Card className="p-6 h-full border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md">
-                  <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform duration-300`}>
-                    {feature.icon}
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
                 </Card>
               </motion.div>
             ))}

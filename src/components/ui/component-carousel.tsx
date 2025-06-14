@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
@@ -15,6 +13,7 @@ import {
   Play,
   Pause
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import MyondCarouselSection from './myond-carousel-section'
 import AiSolutionsShowcase from './ai-solutions-showcase'
 import SaasStartupShowcase from './saas-startup-showcase'
@@ -24,13 +23,16 @@ const ComponentCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlay, setIsAutoPlay] = useState(false)
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null)
+  
+  const tCarousel = useTranslations('carousel')
+  const tServices = useTranslations('services')
 
   const components = [
     {
       id: 'myond',
-      title: 'Myond',
-      subtitle: 'AI Workspace',
-      description: 'AI-powered next-generation workspace that visually structures thoughts, plans, and activities',
+      title: tServices('myond.title'),
+      subtitle: tServices('myond.subtitle'),
+      description: tServices('myond.description'),
       icon: <Brain className="w-6 h-6" />,
       color: 'from-blue-500 to-cyan-500',
       bgColor: 'bg-blue-50/50',
@@ -38,9 +40,9 @@ const ComponentCarousel = () => {
     },
     {
       id: 'ai-solutions',
-      title: 'AI Solutions',
-      subtitle: 'LLM & RAG Services',
-      description: 'Advanced AI services including LLM integration, RAG systems, and AI agent development',
+      title: tServices('aiSolutions.title'),
+      subtitle: tServices('aiSolutions.subtitle'),
+      description: tServices('aiSolutions.description'),
       icon: <Bot className="w-6 h-6" />,
       color: 'from-purple-500 to-blue-500',
       bgColor: 'bg-purple-50/50',
@@ -48,9 +50,9 @@ const ComponentCarousel = () => {
     },
     {
       id: 'saas-startup',
-      title: 'SaaS/Startup',
-      subtitle: 'Full Development Support',
-      description: 'Complete SaaS development and startup support from concept to market',
+      title: tServices('saasStartup.title'),
+      subtitle: tServices('saasStartup.subtitle'),
+      description: tServices('saasStartup.description'),
       icon: <Rocket className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
       bgColor: 'bg-green-50/50',
@@ -58,9 +60,9 @@ const ComponentCarousel = () => {
     },
     {
       id: 'tech-services',
-      title: 'Tech Services',
-      subtitle: 'DX & Analytics',
-      description: 'Digital transformation and data analytics consulting for enterprise systems',
+      title: tServices('techServices.title'),
+      subtitle: tServices('techServices.subtitle'),
+      description: tServices('techServices.description'),
       icon: <Settings className="w-6 h-6" />,
       color: 'from-blue-500 to-green-500',
       bgColor: 'bg-blue-50/50',
@@ -136,17 +138,14 @@ const ComponentCarousel = () => {
           <Badge className="mb-4 px-4 py-2 bg-gradient-to-r from-primary/80 to-primary">
             <span className="flex items-center gap-2">
               {components[currentIndex].icon}
-              4つのコアコンポーネント
+              {tCarousel('badge')}
             </span>
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Bayond LLC:
-            <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              {" "}プロダクト & サービス
-            </span>
+            {tCarousel('title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            4つの主要コンポーネントをスライド形式でご紹介します。各サービスの詳細をご覧ください。
+            {tCarousel('description')}
           </p>
         </div>
 
@@ -219,7 +218,7 @@ const ComponentCarousel = () => {
                   className="hidden sm:flex"
                 >
                   {isAutoPlay ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                  {isAutoPlay ? 'Pause' : 'Auto'}
+                  {isAutoPlay ? tCarousel('pause') : tCarousel('auto')}
                 </Button>
                 
                 <Button variant="outline" size="sm" onClick={prevSlide}>
@@ -276,7 +275,7 @@ const ComponentCarousel = () => {
         {/* Keyboard Navigation Hint */}
         <div className="text-center mt-6">
           <p className="text-sm text-muted-foreground">
-            💡 キーボードの ←→ キーでもスライドを切り替えできます
+            {tCarousel('keyboardHint')}
           </p>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { useTranslations } from 'next-intl'
 
 interface ContactFormData {
   name: string
@@ -11,6 +12,7 @@ interface ContactFormData {
 }
 
 export default function ContactForm() {
+  const t = useTranslations('contact')
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -47,15 +49,15 @@ export default function ContactForm() {
         ])
 
       if (error) {
-        console.log('Supabase送信エラー:', error)
-        setSubmitMessage('お問い合わせを受け付けました。（メール送信機能は開発中です）')
+        console.log('Supabase sending error:', error)
+        setSubmitMessage(t('success'))
       } else {
-        setSubmitMessage('お問い合わせを受け付けました。ありがとうございます！')
+        setSubmitMessage(t('success'))
         setFormData({ name: '', email: '', company: '', message: '' })
       }
     } catch (error) {
-      console.log('送信エラー:', error)
-      setSubmitMessage('お問い合わせを受け付けました。（メール送信機能は開発中です）')
+      console.log('Sending error:', error)
+      setSubmitMessage(t('error'))
     }
 
     setIsSubmitting(false)
@@ -64,7 +66,7 @@ export default function ContactForm() {
 
   return (
     <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">お問い合わせフォーム</h3>
+      <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">{t('title')}</h3>
       
       {submitMessage && (
         <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg">
@@ -75,7 +77,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-            お名前 *
+            {t('name')} *
           </label>
           <input
             type="text"
@@ -85,13 +87,12 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="山田太郎"
           />
         </div>
 
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-            メールアドレス *
+            {t('email')} *
           </label>
           <input
             type="email"
@@ -101,13 +102,12 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="yamada@example.com"
           />
         </div>
 
         <div>
           <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-            会社名
+            {t('company')}
           </label>
           <input
             type="text"
@@ -116,13 +116,12 @@ export default function ContactForm() {
             value={formData.company}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="株式会社サンプル"
           />
         </div>
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-            お問い合わせ内容 *
+            {t('message')} *
           </label>
           <textarea
             id="message"
@@ -132,7 +131,6 @@ export default function ContactForm() {
             required
             rows={6}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="お問い合わせ内容をご記入ください..."
           />
         </div>
 
@@ -141,7 +139,7 @@ export default function ContactForm() {
           disabled={isSubmitting}
           className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition duration-300"
         >
-          {isSubmitting ? '送信中...' : '送信する'}
+          {isSubmitting ? '...' : t('submit')}
         </button>
       </form>
     </div>

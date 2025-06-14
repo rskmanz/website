@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://bayond.tech/sitemap.xml
+
+# Block admin pages
+Disallow: /admin/
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /ja/
+Allow: /en/
+
+# Crawl delay
+Crawl-delay: 1

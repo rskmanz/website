@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Play, Zap, Network, Brain, Users, ChevronDown } from 'lucide-react'
+import Image from 'next/image'
 
 interface Node {
   id: string
@@ -385,6 +386,14 @@ const BayondTechHero: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="space-y-4"
               >
+                <Image
+                  src="/bayond_images/21.svg"
+                  alt="Myond Feature"
+                  width={320}
+                  height={200}
+                  className="rounded-xl mx-auto mb-4"
+                  style={{ width: '100%', maxWidth: 320, height: 'auto' }}
+                />
                 <Card className="p-6 bg-gradient-to-br from-blue-50/50 to-cyan-50/50 border-border/50 hover:shadow-lg transition-all duration-300 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
@@ -419,6 +428,14 @@ const BayondTechHero: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="space-y-4"
               >
+                <Image
+                  src="/bayond_images/22.svg"
+                  alt="AI Solutions Feature"
+                  width={320}
+                  height={200}
+                  className="rounded-xl mx-auto mb-4"
+                  style={{ width: '100%', maxWidth: 320, height: 'auto' }}
+                />
                 <Card className="p-6 bg-gradient-to-br from-purple-50/50 to-violet-50/50 border-border/50 hover:shadow-lg transition-all duration-300 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-500 rounded-xl flex items-center justify-center">
@@ -453,6 +470,14 @@ const BayondTechHero: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="space-y-4"
               >
+                <Image
+                  src="/bayond_images/23.svg"
+                  alt="SaaS Startup Feature"
+                  width={320}
+                  height={200}
+                  className="rounded-xl mx-auto mb-4"
+                  style={{ width: '100%', maxWidth: 320, height: 'auto' }}
+                />
                 <Card className="p-6 bg-gradient-to-br from-green-50/50 to-emerald-50/50 border-border/50 hover:shadow-lg transition-all duration-300 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
@@ -487,6 +512,14 @@ const BayondTechHero: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="space-y-4"
               >
+                <Image
+                  src="/images/components/tech-services.svg"
+                  alt="Tech Services Feature"
+                  width={320}
+                  height={200}
+                  className="rounded-xl mx-auto mb-4"
+                  style={{ width: '100%', maxWidth: 320, height: 'auto' }}
+                />
                 <Card className="p-6 bg-gradient-to-br from-orange-50/50 to-red-50/50 border-border/50 hover:shadow-lg transition-all duration-300 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
@@ -577,34 +610,6 @@ const BayondTechHero: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="px-6 lg:px-12 py-16"
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            <Card className="p-12 bg-gradient-to-br from-blue-50/50 to-purple-50/50 border-border/50">
-              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
-                Ready to Transform Your Workflow?
-              </h3>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join thousands of teams already using Myond to unlock their creative potential and build the future of work.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="px-8 py-6 text-lg font-semibold">
-                  Get Started Free
-                </Button>
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg font-semibold">
-                  Schedule Demo
-                </Button>
-              </div>
-            </Card>
-          </div>
-        </motion.div>
 
         {/* Scroll Indicator */}
         <motion.div

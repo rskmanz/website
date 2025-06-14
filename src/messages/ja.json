@@ -1,0 +1,67 @@
+{
+  "common": {
+    "english": "EN",
+    "japanese": "JP"
+  },
+  "hero": {
+    "badge": "知的労働の未来",
+    "title": "思考と働き方を変革する",
+    "description": "Myond by Bayond LLCはAI搭載の次世代ワークスペースです。思考・計画・タスクを可視化・構造化し、本当に実現したいことを明確にします。",
+    "exploreButton": "未来を探求する"
+  },
+  "numbers": {
+    "badge": "重要な数字",
+    "title": "グローバルな影響力と成長",
+    "description": "サンフランシスコと日本に拠点を置くグローバルスタートアップの実績",
+    "activeClients": "アクティブクライアント",
+    "completedProjects": "完了プロジェクト",
+    "techExperts": "技術エキスパート",
+    "globalOffices": "グローバルオフィス"
+  },
+  "company": {
+    "badge": "会社概要",
+    "title": "Bayond LLC: 境界を超えて",
+    "tagline": "これは、米国のベイエリアと日本の海岸を超えたグローバルスタートアップです",
+    "globalTeam": "グローバルチーム",
+    "globalTeamDesc": "カリフォルニア州サンフランシスコと日本を拠点とするグローバルチーム",
+    "innovationFocus": "イノベーションフォーカス",
+    "innovationDesc": "最先端のAI、SaaS、DX技術で企業および個人の生産性を革新",
+    "mission": "ミッション",
+    "missionDesc": "テクノロジーを通じて人々をより幸せにする瞬間を創造",
+    "companyInfo": "会社情報",
+    "founded": "設立",
+    "headquarters": "本社",
+    "ceo": "CEO",
+    "email": "メール",
+    "officeAddress": "オフィス住所"
+  },
+  "transform": {
+    "badge": "変革の準備はできていますか？",
+    "title": "ワークフローを変革する",
+    "description": "ワークフローを次のレベルに押し上げましょう。Myondで新しい働き方を始めましょう。"
+  },
+  "footer": {
+    "companyDescription": "これは、米国のベイエリアと日本の海岸を超えたグローバルスタートアップです",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "productsServices": "製品・サービス",
+    "myondWorkspace": "Myond - AIワークスペース",
+    "aiSolutions": "AIソリューション",
+    "saasSupport": "SaaS/スタートアップサポート",
+    "techServices": "テックサービス（DX＆アナリティクス）",
+    "contactUs": "お問い合わせ",
+    "ceoName": "CEO: 緒方 涼介",
+    "emailContact": "メール: r.ogata@bayond.tech",
+    "linkedin": "LinkedIn: 接続可能",
+    "copyright": "© 2024 Bayond LLC. All rights reserved."
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "message": "メッセージ",
+    "submit": "送信",
+    "success": "お問い合わせありがとうございます！近日中にご連絡いたします。",
+    "error": "エラーが発生しました。もう一度お試しください。"
+  }
+}

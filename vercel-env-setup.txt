@@ -1,0 +1,21 @@
+# Vercel環境変数設定用
+
+## 設定が必要な環境変数
+
+### 1. NEXT_PUBLIC_SUPABASE_URL
+https://nvnwsgddikyzfqkrcdmd.supabase.co
+
+### 2. NEXT_PUBLIC_SUPABASE_ANON_KEY
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52bndzZ2RkaWt5emZxa3JjZG1kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1NTYyNjcsImV4cCI6MjA1ODEzMjI2N30.tEeLIOPIXo0zZxKn7WFxPiXCdlqyNVzUCOj5Fz43Zyo
+
+## Vercelダッシュボードでの設定URL
+https://vercel.com/rskmanzs-projects/bayond-website/settings/environment-variables
+
+## 設定手順
+1. 上記URLにアクセス
+2. "Add New" をクリック
+3. 変数名と値を入力
+4. Environment: Production を選択
+5. Save をクリック
+
+この2つの環境変数を設定すれば、Supabase統合が完全に動作します。 

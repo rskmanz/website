@@ -1,0 +1,97 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="startupGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#F1F5F9;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="url(#startupGradient)" />
+  
+  <!-- Rocket body -->
+  <ellipse cx="120" cy="100" rx="20" ry="50" fill="url(#rocketGradient)" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Rocket nose -->
+  <ellipse cx="120" cy="50" rx="12" ry="20" fill="url(#rocketGradient)" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Rocket fins -->
+  <path d="M 100 130 L 90 150 L 105 140 Z" fill="url(#rocketGradient)" stroke="#FFFFFF" stroke-width="1.5"/>
+  <path d="M 140 130 L 150 150 L 135 140 Z" fill="url(#rocketGradient)" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  <!-- Rocket window -->
+  <circle cx="120" cy="85" r="8" fill="#10B981" opacity="0.8"/>
+  <circle cx="120" cy="85" r="5" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Flame/exhaust -->
+  <ellipse cx="120" cy="170" rx="8" ry="20" fill="url(#flameGradient)" opacity="0.9">
+    <animate attributeName="ry" values="15;25;15" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="118" cy="175" rx="5" ry="15" fill="#F97316" opacity="0.8">
+    <animate attributeName="ry" values="10;18;10" dur="1.2s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="122" cy="175" rx="5" ry="15" fill="#F97316" opacity="0.8">
+    <animate attributeName="ry" values="10;18;10" dur="1.8s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Launch platform/base -->
+  <rect x="80" y="190" width="80" height="8" rx="4" fill="url(#rocketGradient)" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- Code/development elements around rocket -->
+  <!-- Left side - code blocks -->
+  <rect x="40" y="70" width="30" height="20" rx="3" fill="#FFFFFF" opacity="0.8"/>
+  <line x1="45" y1="75" x2="65" y2="75" stroke="#10B981" stroke-width="1.5"/>
+  <line x1="45" y1="80" x2="60" y2="80" stroke="#047857" stroke-width="1.5"/>
+  <line x1="45" y1="85" x2="65" y2="85" stroke="#10B981" stroke-width="1.5"/>
+  
+  <rect x="40" y="110" width="30" height="20" rx="3" fill="#FFFFFF" opacity="0.8"/>
+  <line x1="45" y1="115" x2="65" y2="115" stroke="#10B981" stroke-width="1.5"/>
+  <line x1="45" y1="120" x2="58" y2="120" stroke="#047857" stroke-width="1.5"/>
+  <line x1="45" y1="125" x2="63" y2="125" stroke="#10B981" stroke-width="1.5"/>
+  
+  <!-- Right side - tech stack -->
+  <rect x="170" y="70" width="30" height="20" rx="3" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="180" cy="80" r="3" fill="#10B981"/>
+  <circle cx="190" cy="80" r="3" fill="#047857"/>
+  
+  <rect x="170" y="110" width="30" height="20" rx="3" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="180" cy="120" r="3" fill="#10B981"/>
+  <circle cx="190" cy="120" r="3" fill="#047857"/>
+  
+  <!-- Connection lines to rocket -->
+  <line x1="70" y1="80" x2="100" y2="95" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="120" x2="100" y2="105" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="170" y1="80" x2="140" y2="95" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  <line x1="170" y1="120" x2="140" y2="105" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Stars/success indicators -->
+  <g opacity="0.8">
+    <polygon points="60,40 62,46 68,46 63,50 65,56 60,52 55,56 57,50 52,46 58,46" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,40 182,46 188,46 183,50 185,56 180,52 175,56 177,50 172,46 178,46" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="50,160 52,166 58,166 53,170 55,176 50,172 45,176 47,170 42,166 48,166" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="190,160 192,166 198,166 193,170 195,176 190,172 185,176 187,170 182,166 188,166" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <!-- Growth arrow -->
+  <path d="M 120 30 L 115 35 L 118 35 L 118 45 L 122 45 L 122 35 L 125 35 Z" fill="#FFFFFF" opacity="0.9">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg> 

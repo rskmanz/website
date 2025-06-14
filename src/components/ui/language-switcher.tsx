@@ -1,35 +1,43 @@
-"use client"
-
 import React from 'react'
 import Link from 'next/link'
-import { useLocale, useTranslations } from 'next-intl'
+import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Globe } from 'lucide-react'
 
 const LanguageSwitcher = () => {
-  const locale = useLocale()
+  const router = useRouter()
   const t = useTranslations('common')
+  const { pathname, asPath, query, locale } = router
 
   return (
     <div className="flex items-center gap-2">
       <Globe className="w-4 h-4" />
       <div className="flex gap-1">
-        <Link href="/" locale="ja">
+        <Link 
+          href={{ pathname, query }}
+          as={asPath}
+          locale="ja"
+        >
           <Button 
             variant={locale === 'ja' ? 'default' : 'outline'}
             size="sm"
             className="text-xs"
           >
-            {t('japanese')}
+            JP
           </Button>
         </Link>
-        <Link href="/en" locale="en">
+        <Link 
+          href={{ pathname, query }}
+          as={asPath}
+          locale="en"
+        >
           <Button 
             variant={locale === 'en' ? 'default' : 'outline'}
             size="sm"
             className="text-xs"
           >
-            {t('english')}
+            EN
           </Button>
         </Link>
       </div>

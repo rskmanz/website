@@ -1,33 +1,16 @@
-"use client"
-
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Brain, 
-  Network, 
-  MessageSquare, 
-  Edit, 
-  Bot, 
-  Users, 
-  GraduationCap, 
-  Palette, 
-  Search, 
-  Code, 
-  Calendar,
-  CheckCircle,
-  ArrowRight,
-  Star,
-  Sparkles,
-  Layers,
-  Target,
-  Zap,
-  Globe
-} from 'lucide-react'
+import { Brain, Network, CheckCircle, Layers, Target, Zap, Users, GraduationCap, Palette, Search, Code, Calendar, Star, Sparkles, ArrowRight, Globe } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const MyondCarouselSection = () => {
+  const t = useTranslations('myond')
+  const router = useRouter()
   const showcaseRef = useRef(null)
   const isInView = useInView(showcaseRef, { once: true, amount: 0.2 })
 
@@ -51,127 +34,116 @@ const MyondCarouselSection = () => {
     }
   }
 
+  // Helper function to safely get array from translations
+  const getTranslationArray = (key: string, fallback: string[] = []) => {
+    try {
+      const result = t.raw(key)
+      return Array.isArray(result) ? result : fallback
+    } catch {
+      return fallback
+    }
+  }
+
   const capabilities = [
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "Meta Thinking",
-      description: "Structure and visualize your thoughts, emotions, plans, and tasks to get a bird's-eye view of the whole picture. Organize the state of your mind as a map.",
-      features: ["Visual mind mapping", "Thought pattern analysis", "Cognitive load optimization"]
+      title: t('capabilities.metaThinking.title'),
+      description: t('capabilities.metaThinking.description'),
+      features: getTranslationArray('capabilities.metaThinking.features', ["AI-powered mind mapping", "Emotional intelligence tracking", "Cognitive load optimization", "Pattern recognition"])
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Central Own Hub",
-      description: "A personal central platform that aggregates all information related to you and connects with other tools and services as your intellectual core.",
-      features: ["Personal central database", "External app integration", "Unified workflow management"]
+      title: t('capabilities.centralHub.title'),
+      description: t('capabilities.centralHub.description'),
+      features: getTranslationArray('capabilities.centralHub.features', ["360° personal dashboard", "Universal app integration", "Intelligent workflow automation", "Real-time synchronization"])
     },
     {
       icon: <Layers className="w-6 h-6" />,
-      title: "Connection (Meaningful Relationships)",
-      description: "Diverse relationships as meaningful structures - directional and non-directional connections that form an intelligent network.",
-      features: ["Smart relationship mapping", "Dynamic connection types", "Intelligent navigation"]
+      title: t('capabilities.meaningfulConnections.title'),
+      description: t('capabilities.meaningfulConnections.description'),
+      features: getTranslationArray('capabilities.meaningfulConnections.features', ["Relationship mapping", "Communication insights", "Networking optimization", "Collaboration enhancement"])
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Extension (Beyond Yourself)",
-      description: "AI automatically retrieves and maps related information, building a dynamic knowledge network that expands your thinking horizons.",
-      features: ["AI-powered knowledge retrieval", "Dynamic information mapping", "Creative perspective expansion"]
-    }
-  ]
-
-  const aiFeatures = [
-    {
-      icon: <MessageSquare className="w-5 h-5" />,
-      title: "Ask - Explore Ideas Freely",
-      description: "Interact with AI to ask questions, brainstorm, or gather knowledge. Expand thinking and find insights intuitively.",
-      color: "bg-blue-500"
-    },
-    {
-      icon: <Edit className="w-5 h-5" />,
-      title: "Edit - Refine and Transform",
-      description: "AI helps modify or reframe existing content — turning notes into tasks, organizing scattered thoughts, or summarizing ideas.",
-      color: "bg-green-500"
-    },
-    {
-      icon: <Bot className="w-5 h-5" />,
-      title: "Agent - Execute with Direction",
-      description: "Tell AI what you want to achieve, and it generates tasks, updates maps, and assists in step-by-step workflows.",
-      color: "bg-purple-500"
+      title: t('capabilities.extension.title'),
+      description: t('capabilities.extension.description'),
+      features: getTranslationArray('capabilities.extension.features', ["AI-powered knowledge retrieval", "Dynamic information mapping", "Creative perspective expansion", "Intelligent connections"])
     }
   ]
 
   const useCases = [
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Startup Founders",
-      description: "Map vision → strategy → product → pitch. Organize team structure and OKRs.",
-      tags: ["Vision Planning", "Team Management", "Investor Pitch"]
+      title: t('useCases.entrepreneurs.title'),
+      description: t('useCases.entrepreneurs.description'),
+      tags: getTranslationArray('useCases.entrepreneurs.benefits', ["Vision Planning", "Team Management", "Investor Pitch"])
     },
     {
       icon: <GraduationCap className="w-5 h-5" />,
-      title: "Students",
-      description: "Create visual study maps, generate quiz questions, and track assignments.",
-      tags: ["Study Maps", "Quiz Generation", "Assignment Tracking"]
+      title: t('useCases.students.title'),
+      description: t('useCases.students.description'),
+      tags: getTranslationArray('useCases.students.benefits', ["Study Maps", "Quiz Generation", "Assignment Tracking"])
     },
     {
       icon: <Palette className="w-5 h-5" />,
-      title: "Designers & Creators",
-      description: "Map creative flow, script, or content production cycles.",
-      tags: ["Creative Workflow", "Content Planning", "Project Visualization"]
+      title: t('useCases.creatives.title'),
+      description: t('useCases.creatives.description'),
+      tags: getTranslationArray('useCases.creatives.benefits', ["Creative Workflow", "Content Planning", "Project Visualization"])
     },
     {
       icon: <Search className="w-5 h-5" />,
-      title: "Researchers",
-      description: "Organize research questions, literature, notes, and conclusions.",
-      tags: ["Literature Review", "Note Organization", "Research Synthesis"]
+      title: t('useCases.researchers.title'),
+      description: t('useCases.researchers.description'),
+      tags: getTranslationArray('useCases.researchers.benefits', ["Literature Review", "Note Organization", "Research Synthesis"])
     },
     {
       icon: <Code className="w-5 h-5" />,
-      title: "Developers",
-      description: "Visualize system architecture, feature specs, and track bugs or updates.",
-      tags: ["System Design", "Feature Planning", "Bug Tracking"]
+      title: t('useCases.developers.title'),
+      description: t('useCases.developers.description'),
+      tags: getTranslationArray('useCases.developers.benefits', ["System Design", "Feature Planning", "Bug Tracking"])
     },
     {
       icon: <Calendar className="w-5 h-5" />,
-      title: "Managers",
-      description: "Turn meeting notes into tasks and connect dependencies visually.",
-      tags: ["Meeting Management", "Task Dependencies", "Team Coordination"]
+      title: t('useCases.managers.title'),
+      description: t('useCases.managers.description'),
+      tags: getTranslationArray('useCases.managers.benefits', ["Meeting Management", "Task Dependencies", "Team Coordination"])
     }
   ]
 
   const pricingOptions = [
     {
-      duration: '2weeks' as const,
-      price: '¥80',
-      features: ['Basic graph workspace', 'Personal templates', 'Cloud sync']
+      duration: t('pricing.basic.duration'),
+      price: t('pricing.basic.price'),
+      features: getTranslationArray('pricing.basic.features', ["Basic graph workspace", "Personal templates", "Cloud sync"])
     },
     {
-      duration: '4weeks' as const,
-      price: '¥120',
-      features: ['All basic features', 'AI collaboration', 'Advanced templates', 'Team sharing'],
+      duration: t('pricing.pro.duration'),
+      price: t('pricing.pro.price'),
+      features: getTranslationArray('pricing.pro.features', ["All basic features", "AI collaboration", "Advanced templates", "Team sharing"]),
       popular: true
     },
     {
-      duration: '8weeks' as const,
-      price: '¥150',
-      features: ['All features', 'Priority support', 'Custom integrations', 'Advanced analytics']
+      duration: t('pricing.enterprise.duration'),
+      price: t('pricing.enterprise.price'),
+      features: getTranslationArray('pricing.enterprise.features', ["All features", "Priority support", "Custom integrations", "Advanced analytics"])
     }
   ]
 
   const techStack = [
-    { name: 'React', icon: '⚛️', description: 'Modern UI framework' },
-    { name: 'Firebase', icon: '🔥', description: 'Real-time database' },
-    { name: 'OpenAI', icon: '🤖', description: 'AI intelligence' },
-    { name: 'LangChain', icon: '🔗', description: 'AI orchestration' }
+    { name: 'React', icon: '⚛️', description: t('techStack.react') },
+    { name: 'Firebase', icon: '🔥', description: t('techStack.firebase') },
+    { name: 'OpenAI', icon: '🤖', description: t('techStack.openai') },
+    { name: 'LangChain', icon: '🔗', description: t('techStack.langchain') }
   ]
 
-  const productFeatures = [
+  const productFeatures = getTranslationArray('features', [
     "Graph Workspace - Visualize entire thought and work process",
     "Daily Logs & Reflections - Track emotional state and progress",
     "Smart Nodes - Text, tasks, links, videos, PDFs, code",
     "AI Functions - Ask, Edit, Agent for comprehensive support",
     "Templates - Built-in formats for various use cases",
     "Reusable Structures - Brand messages, pitches, roadmaps"
-  ]
+  ])
 
   return (
     <div ref={showcaseRef} className="py-8 bg-gradient-to-br from-blue-50/50 to-purple-50/50">
@@ -185,20 +157,27 @@ const MyondCarouselSection = () => {
         <motion.div variants={itemVariants} className="text-center mb-12">
           <Badge className="mb-4 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500">
             <Sparkles className="w-4 h-4 mr-2" />
-            AI-Powered Workspace
+            {t('badge')}
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Meet Myond
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            An AI-powered next-generation workspace that visually structures and visualizes everything about you—thoughts, plans, tasks, and activities—on a single graph. 
-            It functions as your central database, clarifying &ldquo;what you really want to do&rdquo; and navigating you toward realization.
+            {t('description')}
           </p>
+          <Image
+            src="/images/components/myond-workspace.svg"
+            alt="Myond"
+            width={320}
+            height={180}
+            className="rounded-xl mx-auto mb-4"
+            style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+          />
         </motion.div>
 
         {/* Core Capabilities */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Core Capabilities</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">{t('coreCapabilities')}</h3>
           <div className="grid lg:grid-cols-2 gap-6">
             {capabilities.map((capability, index) => (
               <motion.div
@@ -231,32 +210,9 @@ const MyondCarouselSection = () => {
           </div>
         </motion.div>
 
-        {/* AI Features */}
-        <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">AI Collaboration Features</h3>
-          <div className="grid md:grid-cols-3 gap-4">
-            {aiFeatures.map((feature, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.02 }}
-                className="group"
-              >
-                <Card className="p-5 h-full border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md">
-                  <div className={`w-10 h-10 rounded-lg ${feature.color} flex items-center justify-center mb-3 text-white group-hover:scale-110 transition-transform duration-300`}>
-                    {feature.icon}
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Use Cases */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Perfect for Every Professional</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">{t('perfectFor')}</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {useCases.map((useCase, index) => (
               <motion.div
@@ -290,7 +246,7 @@ const MyondCarouselSection = () => {
         <motion.div variants={itemVariants} className="mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Key Features</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('keyFeatures')}</h3>
               <div className="space-y-3">
                 {productFeatures.map((feature, index) => (
                   <motion.div
@@ -312,8 +268,8 @@ const MyondCarouselSection = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
                     <Network className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold">Interactive Graph Workspace</h4>
-                  <p className="text-muted-foreground text-sm">Visualize connections between all your work elements</p>
+                  <h4 className="text-lg font-semibold">{t('workspaceTitle')}</h4>
+                  <p className="text-muted-foreground text-sm">{t('workspaceDescription')}</p>
                 </div>
               </div>
             </div>
@@ -322,7 +278,7 @@ const MyondCarouselSection = () => {
 
         {/* Pricing */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Simple Pricing</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">{t('simplePricing')}</h3>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {pricingOptions.map((option) => (
               <motion.div
@@ -335,7 +291,7 @@ const MyondCarouselSection = () => {
                 }`}>
                   {option.popular && (
                     <Badge className="absolute top-3 right-3 bg-gradient-to-r from-blue-500 to-purple-500 text-xs">
-                      Popular
+                      {t('popular')}
                     </Badge>
                   )}
                   <div className="mb-3">
@@ -355,7 +311,7 @@ const MyondCarouselSection = () => {
                     variant={option.popular ? 'default' : 'outline'}
                     size="sm"
                   >
-                    Get Started
+                    {t('getStarted')}
                     <ArrowRight className="w-3 h-3 ml-2" />
                   </Button>
                 </Card>
@@ -366,7 +322,7 @@ const MyondCarouselSection = () => {
 
         {/* Tech Stack */}
         <motion.div variants={itemVariants} className="mb-12">
-          <h3 className="text-2xl font-bold text-center mb-8">Built with Modern Technology</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">{t('builtWith')}</h3>
           <div className="grid md:grid-cols-4 gap-4">
             {techStack.map((tech, index) => (
               <motion.div
@@ -395,15 +351,15 @@ const MyondCarouselSection = () => {
                 <Brain className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl lg:text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Brand Message
+                {t('brandMessage')}
               </h3>
               <blockquote className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-relaxed">
-                &ldquo;Ask yourself, What you do and what you really want to do&rdquo;
+                &ldquo;{t('brandQuote')}&rdquo;
               </blockquote>
               <div className="border-t border-border/30 pt-6">
-                <h4 className="text-lg font-semibold mb-3 text-primary">Our Mission</h4>
+                <h4 className="text-lg font-semibold mb-3 text-primary">{t('ourMission')}</h4>
                 <p className="text-base text-muted-foreground italic">
-                  &ldquo;Map everything about you and guide your daily thoughts into meaningful actions with AI&rdquo;
+                  &ldquo;{t('missionQuote')}&rdquo;
                 </p>
               </div>
             </div>
@@ -413,17 +369,17 @@ const MyondCarouselSection = () => {
         {/* CTA */}
         <motion.div variants={itemVariants} className="text-center">
           <Card className="p-8 bg-gradient-to-br from-blue-50/50 to-purple-50/50 border-border/50">
-            <h3 className="text-2xl font-bold mb-3">Ready to Transform Your Workflow?</h3>
+            <h3 className="text-2xl font-bold mb-3">{t('ctaTitle')}</h3>
             <p className="text-base text-muted-foreground mb-6 max-w-xl mx-auto">
-              Join thousands of professionals who use Myond to map their thoughts into meaningful actions.
+              {t('ctaDescription')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button size="lg" className="px-6 py-3 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-500">
-                Start Free Trial
+                {t('startFreeTrial')}
                 <Star className="w-4 h-4 ml-2" />
               </Button>
               <Button variant="outline" size="lg" className="px-6 py-3 text-base font-semibold">
-                View Demo
+                {t('viewDemo')}
                 <Globe className="w-4 h-4 ml-2" />
               </Button>
             </div>

@@ -16,6 +16,7 @@ import {
   TrendingUp,
   Brain
 } from 'lucide-react'
+import Image from 'next/image'
 
 const SaasStartupShowcase = () => {
   const showcaseRef = useRef(null)
@@ -159,6 +160,17 @@ const SaasStartupShowcase = () => {
             We help entrepreneurs and businesses build, launch, and scale AI-enhanced software applications 
             from concept to market with comprehensive development and strategy support.
           </p>
+          <p className="text-muted-foreground mb-4">
+            Complete SaaS development and startup support from concept to market
+          </p>
+          <Image
+            src="/images/components/saas-startup.svg"
+            alt="SaaS Support"
+            width={320}
+            height={180}
+            className="rounded-xl mx-auto mb-4"
+            style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+          />
         </motion.div>
 
         {/* Services */}

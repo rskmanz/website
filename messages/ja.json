@@ -1,0 +1,259 @@
+{
+  "common": {
+    "english": "EN",
+    "japanese": "JP"
+  },
+  "hero": {
+    "badge": "知的労働の未来",
+    "title": "思考と働き方を変革する",
+    "description": "Myond by Bayond LLCはAI搭載の次世代ワークスペースです。思考・計画・タスクを可視化・構造化し、本当に実現したいことを明確にします。",
+    "exploreButton": "未来を探求する"
+  },
+  "numbers": {
+    "badge": "重要な数字",
+    "title": "グローバルな影響力と成長",
+    "description": "サンフランシスコと日本に拠点を置くグローバルスタートアップの実績",
+    "activeClients": "アクティブクライアント",
+    "completedProjects": "完了プロジェクト",
+    "techExperts": "技術エキスパート",
+    "globalOffices": "グローバルオフィス"
+  },
+  "company": {
+    "badge": "会社概要",
+    "title": "Bayond LLC: 境界を超えて",
+    "tagline": "これは、米国のベイエリアと日本の海岸を超えたグローバルスタートアップです",
+    "globalTeam": "グローバルチーム",
+    "globalTeamDesc": "カリフォルニア州サンフランシスコと日本を拠点とするグローバルチーム",
+    "innovationFocus": "イノベーションフォーカス",
+    "innovationDesc": "最先端のAI、SaaS、DX技術で企業および個人の生産性を革新",
+    "mission": "ミッション",
+    "missionDesc": "テクノロジーを通じて人々をより幸せにする瞬間を創造",
+    "companyInfo": "会社情報",
+    "founded": "設立",
+    "headquarters": "本社",
+    "ceo": "CEO",
+    "email": "メール",
+    "officeAddress": "オフィス住所"
+  },
+  "transform": {
+    "badge": "変革の準備はできていますか？",
+    "title": "ワークフローを変革する",
+    "description": "ワークフローを次のレベルに押し上げましょう。Myondで新しい働き方を始めましょう。"
+  },
+  "footer": {
+    "companyDescription": "これは、米国のベイエリアと日本の海岸を超えたグローバルスタートアップです",
+    "address": "2443 Fillmore St, San Francisco, CA, 94115",
+    "productsServices": "製品・サービス",
+    "myondWorkspace": "Myond - AIワークスペース",
+    "aiSolutions": "AIソリューション",
+    "saasSupport": "SaaS/スタートアップサポート",
+    "techServices": "テックサービス（DX＆アナリティクス）",
+    "contactUs": "お問い合わせ",
+    "ceoName": "CEO: 緒方 涼介",
+    "emailContact": "メール: r.ogata@bayond.tech",
+    "linkedin": "LinkedIn: 接続可能",
+    "copyright": "© 2024 Bayond LLC. All rights reserved."
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "message": "メッセージ",
+    "submit": "送信",
+    "success": "お問い合わせありがとうございます！近日中にご連絡いたします。",
+    "error": "エラーが発生しました。もう一度お試しください。"
+  },
+  "header": {
+    "contact": "お問い合わせ"
+  },
+  "carousel": {
+    "badge": "4つのコアコンポーネント",
+    "title": "Bayond LLC: プロダクト & サービス",
+    "description": "4つの主要コンポーネントをスライド形式でご紹介します。各サービスの詳細をご覧ください。",
+    "pause": "一時停止",
+    "auto": "自動",
+    "keyboardHint": "💡 キーボードの ←→ キーでもスライドを切り替えできます"
+  },
+  "services": {
+    "myond": {
+      "title": "Myond",
+      "subtitle": "AIワークスペース",
+      "description": "思考・計画・活動を視覚的に構造化するAI搭載次世代ワークスペース"
+    },
+    "aiSolutions": {
+      "title": "AIソリューション",
+      "subtitle": "LLM & RAGサービス",
+      "description": "LLM統合、RAGシステム、AIエージェント開発を含む高度なAIサービス"
+    },
+    "saasStartup": {
+      "title": "SaaS/スタートアップ",
+      "subtitle": "フル開発サポート",
+      "description": "コンセプトから市場投入まで、完全なSaaS開発とスタートアップサポート"
+    },
+    "techServices": {
+      "title": "テックサービス",
+      "subtitle": "DX & アナリティクス",
+      "description": "エンタープライズシステム向けデジタル変革とデータ分析コンサルティング"
+    }
+  },
+  "myond": {
+    "badge": "🚀 AI搭載ワークスペース革命",
+    "title": "Myond：あなたのAI搭載セカンドブレイン",
+    "description": "Myondで思考を変革しましょう - 思考、計画、活動を視覚的に構造化し、真の可能性を解き放ち、画期的な成果を達成する革命的なAIワークスペース。",
+    "coreCapabilities": "🎯 すべてを変えるコア機能",
+    "perfectFor": "✨ ビジョナリーなプロフェッショナルに最適",
+    "keyFeatures": "⚡ ゲームチェンジング機能",
+    "simplePricing": "💎 シンプルで透明な料金体系",
+    "builtWith": "🔧 最先端技術で構築",
+    "brandMessage": "🌟 私たちのブランド約束",
+    "ourMission": "🎯 私たちのミッション",
+    "ctaTitle": "ワークフローを永続的に変革する準備はできていますか？",
+    "ctaDescription": "生産性を革命化した何千人ものプロフェッショナルに参加",
+    "getStarted": "🚀 旅を始める",
+    "startFreeTrial": "✨ 14日間無料トライアル開始",
+    "viewDemo": "🎬 ライブデモを見る",
+    "capabilities": {
+      "metaThinking": {
+        "title": "🧠 メタ思考エンジン",
+        "description": "思考、感情、計画を視覚的洞察に構造化し、隠れたパターンを明らかにして画期的なアイデアを解き放つ革命的な認知マッピング。",
+        "features": ["AI搭載マインドマッピング", "感情知能追跡", "認知負荷最適化", "パターン認識"]
+      },
+      "centralHub": {
+        "title": "🎯 デジタル司令センター",
+        "description": "知的コアとなり、すべてのツールと情報を統一されたワークスペースにシームレスに接続する強力な個人プラットフォーム。",
+        "features": ["360°個人ダッシュボード", "ユニバーサルアプリ統合", "インテリジェントワークフロー自動化", "リアルタイム同期"]
+      },
+      "meaningfulConnections": {
+        "title": "🌐 関係性インテリジェンス",
+        "description": "AI搭載の洞察で有意義な専門的関係を構築・育成し、真の繋がりを作り出し持続的な影響を創造。",
+        "features": ["関係性マッピング", "コミュニケーション洞察", "ネットワーキング最適化", "コラボレーション強化"]
+      },
+      "extension": {
+        "title": "⚡ 自分を超える拡張機能",
+        "description": "AIが関連情報を自動的に取得・マッピングし、思考の地平を広げる動的な知識ネットワークを構築。",
+        "features": ["AI搭載知識検索", "動的情報マッピング", "創造的視点拡張", "インテリジェント接続"]
+      }
+    },
+    "useCases": {
+      "entrepreneurs": {
+        "title": "🚀 スタートアップ創業者",
+        "description": "ビジョン → 戦略 → 製品 → ピッチをマッピング。チーム構造とOKRを整理。",
+        "benefits": ["ビジョン計画", "チーム管理", "投資家ピッチ"]
+      },
+      "students": {
+        "title": "🎓 学生",
+        "description": "視覚的な学習マップを作成し、クイズ問題を生成し、課題を追跡。",
+        "benefits": ["学習マップ", "クイズ生成", "課題追跡"]
+      },
+      "creatives": {
+        "title": "🎨 デザイナー・クリエイター",
+        "description": "創造的フロー、スクリプト、またはコンテンツ制作サイクルをマッピング。",
+        "benefits": ["創造的ワークフロー", "コンテンツ企画", "プロジェクト可視化"]
+      },
+      "researchers": {
+        "title": "🔬 研究者",
+        "description": "研究質問、文献、メモ、結論を整理。",
+        "benefits": ["文献レビュー", "メモ整理", "研究統合"]
+      },
+      "developers": {
+        "title": "💻 開発者",
+        "description": "システムアーキテクチャ、機能仕様を可視化し、バグや更新を追跡。",
+        "benefits": ["システム設計", "機能計画", "バグ追跡"]
+      },
+      "managers": {
+        "title": "📅 マネージャー",
+        "description": "会議メモをタスクに変換し、依存関係を視覚的に接続。",
+        "benefits": ["会議管理", "タスク依存関係", "チーム調整"]
+      }
+    },
+    "features": [
+      "グラフワークスペース - 思考と作業プロセス全体を可視化",
+      "デイリーログ・リフレクション - 感情状態と進捗を追跡",
+      "スマートノード - テキスト、タスク、リンク、動画、PDF、コード",
+      "AI機能 - 質問、編集、エージェントによる包括的サポート",
+      "テンプレート - 様々な用途向け組み込みフォーマット",
+      "再利用可能構造 - ブランドメッセージ、ピッチ、ロードマップ"
+    ],
+    "pricing": {
+      "basic": {
+        "duration": "2週間",
+        "price": "¥80",
+        "features": ["基本グラフワークスペース", "個人テンプレート", "クラウド同期"]
+      },
+      "pro": {
+        "duration": "4週間",
+        "price": "¥120",
+        "features": ["全基本機能", "AIコラボレーション", "高度テンプレート", "チーム共有"]
+      },
+      "enterprise": {
+        "duration": "8週間",
+        "price": "¥150",
+        "features": ["全機能", "優先サポート", "カスタム統合", "高度分析"]
+      }
+    },
+    "techStack": {
+      "react": "モダンUIフレームワーク",
+      "firebase": "リアルタイムデータベース",
+      "openai": "AI知能",
+      "langchain": "AIオーケストレーション"
+    },
+    "brandQuote": "自分自身に問いかけてください。あなたが何をしているか、そして本当に何をしたいのか",
+    "missionQuote": "あなたに関するすべてをマッピングし、日々の思考をAIによって意味のある行動に導く",
+    "workspaceTitle": "インタラクティブグラフワークスペース",
+    "workspaceDescription": "すべての作業要素間の接続を可視化",
+    "popular": "人気",
+    "getStarted": "開始する"
+  },
+  "aiSolutions": {
+    "badge": "🤖 高度なAIソリューション",
+    "title": "結果を出す革命的AI統合",
+    "description": "LLM統合、インテリジェントRAGシステム、カスタムAIエージェントを含む最先端AIサービスで、測定可能なROIと競争優位性を提供してビジネスを変革。",
+    "useCases": "🎯 実世界のAI成功事例",
+    "implementationProcess": "⚡ 実証済みAI実装プロセス",
+    "ctaTitle": "AIのゲームチェンジング力を活用する準備はできていますか？",
+    "ctaDescription": "弊社のAIソリューションで生産性を300%向上させた業界リーダーに参加",
+    "startProject": "🚀 AI変革を開始",
+    "services": {
+      "customAgents": {
+        "title": "🤖 アプリ内カスタムAIエージェント",
+        "description": "顧客アプリケーションに直接インテリジェントAIエージェントをシームレスに統合し、ユーザー体験向上と自動化ワークフローを実現。",
+        "features": ["自然言語処理", "自動化カスタマーサポート", "インテリジェント推奨", "リアルタイム意思決定"]
+      },
+      "aiDx": {
+        "title": "⚡ AI×デジタル変革 with MCP",
+        "description": "ビジネスプロセスを革命化するAI搭載Model Context Protocol統合でデジタル変革を加速。",
+        "features": ["プロセス自動化", "データインテリジェンス", "予測分析", "ワークフロー最適化"]
+      },
+      "llmIntegration": {
+        "title": "🧠 LLM統合・最適化",
+        "description": "ビジネスコンテキストを理解し正確な結果を提供するカスタム統合で大規模言語モデルの力を活用。",
+        "features": ["カスタムモデル訓練", "API最適化", "コンテキスト理解", "パフォーマンス調整"]
+      },
+      "ragSystems": {
+        "title": "📚 インテリジェントRAGシステム",
+        "description": "企業データにアクセス・活用し、正確で文脈に応じた回答を提供する知識対応AIシステム構築。",
+        "features": ["文書処理", "知識検索", "文脈対応回答", "マルチソース統合"]
+      }
+    }
+  },
+  "saasStartup": {
+    "badge": "SaaS & スタートアップサポート",
+    "title": "アイデアから市場へ：AI搭載SaaSソリューション",
+    "description": "コンセプトから市場投入まで、完全なSaaS開発とスタートアップサポート",
+    "successStories": "成功事例",
+    "techStack": "テクノロジースタック",
+    "developmentProcess": "開発プロセス",
+    "ctaTitle": "SaaSを構築する準備はできていますか？",
+    "startProject": "プロジェクトを開始",
+    "viewPortfolio": "ポートフォリオを見る"
+  },
+  "techServicesShowcase": {
+    "badge": "テックサービス: DX & アナリティクス",
+    "title": "デジタル変革",
+    "description": "エンタープライズシステム向けデジタル変革とデータ分析コンサルティング",
+    "ctaTitle": "デジタル変革の準備はできていますか？",
+    "ctaDescription": "システムを近代化してデータドリブンな洞察を活用しましょう",
+    "startTransformation": "変革を開始"
+  }
+}

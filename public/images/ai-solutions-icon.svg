@@ -1,0 +1,84 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="botGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#F1F5F9;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="url(#aiGradient)" />
+  
+  <!-- Main robot/AI body -->
+  <rect x="90" y="80" width="60" height="80" rx="12" fill="url(#botGradient)" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Robot head -->
+  <rect x="95" y="50" width="50" height="40" rx="8" fill="url(#botGradient)" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="105" cy="65" r="4" fill="#3B82F6"/>
+  <circle cx="135" cy="65" r="4" fill="#3B82F6"/>
+  
+  <!-- Mouth/expression -->
+  <rect x="110" y="75" width="20" height="3" rx="1.5" fill="#8B5CF6"/>
+  
+  <!-- Arms -->
+  <rect x="70" y="100" width="20" height="8" rx="4" fill="url(#botGradient)" stroke="#FFFFFF" stroke-width="1.5"/>
+  <rect x="150" y="100" width="20" height="8" rx="4" fill="url(#botGradient)" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  <!-- Data streams/connections -->
+  <!-- Left side data flow -->
+  <circle cx="40" cy="80" r="6" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="40" cy="100" r="6" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="40" cy="120" r="6" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Right side data flow -->
+  <circle cx="200" cy="80" r="6" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="200" cy="100" r="6" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="200" cy="120" r="6" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Data connection lines -->
+  <line x1="46" y1="80" x2="70" y2="100" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  <line x1="46" y1="100" x2="70" y2="104" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  <line x1="46" y1="120" x2="70" y2="108" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  
+  <line x1="194" y1="80" x2="170" y2="100" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  <line x1="194" y1="100" x2="170" y2="104" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  <line x1="194" y1="120" x2="170" y2="108" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Knowledge base/RAG representation -->
+  <rect x="100" y="180" width="40" height="30" rx="4" fill="url(#botGradient)" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="105" y1="185" x2="135" y2="185" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="105" y1="190" x2="130" y2="190" stroke="#8B5CF6" stroke-width="1.5"/>
+  <line x1="105" y1="195" x2="125" y2="195" stroke="#06B6D4" stroke-width="1.5"/>
+  <line x1="105" y1="200" x2="132" y2="200" stroke="#3B82F6" stroke-width="1.5"/>
+  
+  <!-- Connection to knowledge base -->
+  <line x1="120" y1="160" x2="120" y2="180" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+  
+  <!-- LLM Processing indicators -->
+  <circle cx="60" cy="160" r="8" fill="#FFFFFF" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="160" r="8" fill="#FFFFFF" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Data flow animations -->
+  <circle cx="40" cy="80" r="3" fill="#06B6D4" opacity="0.8">
+    <animate attributeName="cy" values="80;120;80" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="80" r="3" fill="#8B5CF6" opacity="0.8">
+    <animate attributeName="cy" values="80;120;80" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Neural processing indicator on robot head -->
+  <circle cx="120" cy="60" r="2" fill="#FFFFFF" opacity="0.9">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg> 

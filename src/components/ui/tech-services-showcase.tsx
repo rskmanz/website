@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
@@ -10,8 +8,11 @@ import {
   BarChart3, 
   CheckCircle
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const TechServicesShowcase = () => {
+  const t = useTranslations('techServicesShowcase')
   const showcaseRef = useRef(null)
   const isInView = useInView(showcaseRef, { once: true, amount: 0.2 })
 
@@ -84,6 +85,17 @@ const TechServicesShowcase = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             エンタープライズ統合によるデジタル変革とデータ分析コンサルティング
           </p>
+          <p className="text-muted-foreground mb-4">
+            Digital transformation and data analytics consulting for enterprise systems
+          </p>
+          <Image
+            src="/bayond_images/tech-services-card.svg"
+            alt="Tech Services"
+            width={320}
+            height={180}
+            className="rounded-xl mx-auto mb-4"
+            style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+          />
         </motion.div>
 
         {/* Services Grid */}

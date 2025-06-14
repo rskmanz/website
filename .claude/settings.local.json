@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "WebFetch(domain:bayond-website.vercel.app)",
+      "Bash(npm install:*)",
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(apt-get:*)",
+      "Bash(apt-get install:*)",
+      "Bash(sudo apt-get:*)",
+      "Bash(sudo apt-get install:*)",
+      "Bash(grep:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(timeout 30 npm run build:*)",
+      "Bash(node:*)",
+      "Bash(timeout 20 npm run dev)"
+    ],
+    "deny": []
+  }
+}
